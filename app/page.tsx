@@ -1,28 +1,23 @@
-"use client";
-
 import Hero from "@/components/Hero";
 import ProjectList from "@/components/ProjectList";
-import axios from "axios";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 
-type Project = {
-  id: string;
-  name: string;
-  description: string;
-  image?: string;
-  createdAt?: string;
-  category?: string;
-};
+export default async function AdminDashboard() {
 
-export default function Home() {
+  const res = await fetch(process.env.NEXT_PUBLIC_MOCKAPI_URL!, {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    console.error("Failed to fetch projects:", res.statusText);
+    return <div>Error loading projects</div>;
+  }
+
+  const projects = await res.json();
 
   return (
     <main>
-      <div className="bg-white py-24 sm:py-32">
-        <Hero />
-        <ProjectList />
-      </div>
+      <Hero />
+      <ProjectList projects={projects} admin={false} />
     </main>
   );
 }
