@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { isValidImageUrl } from '@/lib/utils';
 
 type Project = {
   id: string;
@@ -45,7 +46,7 @@ export default function ProjectList({ projects, admin = false, }: { projects: Pr
                         {project.image && (
                         <div className="relative mt-3 aspect-[4/3] w-full overflow-hidden rounded">
                             <Image
-                            src={project.image}
+                            src={isValidImageUrl(project.image)}
                             alt={project.name}
                             fill
                             className="object-cover"
