@@ -17,7 +17,12 @@ export default function NewProjectPage() {
     // Funtion to handle form submission to create new project
     const onSubmit = async (data: FormData) => {
         try {
-            await axios.post(process.env.MOCKAPI_URL as string, data);
+            const url = process.env.NEXT_PUBLIC_MOCKAPI_URL;
+            if (!url) {
+                console.error("Falta NEXT_PUBLIC_MOCKAPI_URL");
+                return;
+            }
+            await axios.post(url, data);
             router.push('/admin');
         } catch (error) {
             console.error('Error creating the project:', error);
