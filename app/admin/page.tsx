@@ -12,33 +12,33 @@ export default async function AdminDashboard() {
   const projects = await res.json();
 
   return (
-    <main className="min-h-screen bg-gray-100 p-6">
-      <div className="mb-6 flex items-center justify-between">
-        <h1 className="text-3xl font-bold">Admin Dashboard</h1>
+    <main>
+        <div className="mb-6 flex items-center justify-between">
+            <h1 className="text-3xl font-bold">Admin Dashboard</h1>
 
-        <form
-          action={async () => {
-            "use server";
-            await signOut({ redirectTo: "/admin/login" });
-          }}
-        >
-          <button
-            type="submit"
-            className="rounded bg-red-600 px-4 py-2 text-white hover:bg-red-700"
-          >
-            Log Out
-          </button>
-        </form>
-      </div>
+            <form 
+                action={async () => {
+                    "use server";
+                    await signOut({ redirectTo: "/admin/login" });
+                }}
+            >
+                <button
+                    type="submit"
+                    className="rounded bg-red-600 px-4 py-2 text-white hover:bg-red-700"
+                >
+                    Log Out
+                </button>
+            </form>
+        </div>
 
-      <div className="mb-4">
-        <a
-          href="/admin/projects/new"
-          className="inline-block rounded bg-green-600 px-4 py-2 text-white hover:bg-green-700"
-        >
-          + Create New Project
-        </a>
-      </div>
+        <div className="mb-4">
+            <a
+                href="/admin/projects/new"
+                className="inline-block rounded bg-green-600 px-4 py-2 text-white hover:bg-green-700"
+            >
+            + Create New Project
+            </a>
+        </div>
 
       <ProjectList projects={projects} admin />
     </main>

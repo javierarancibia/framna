@@ -95,8 +95,13 @@ export default function NewProjectPage() {
                         type="submit"
                         className="rounded-md bg-blue-400 w-full px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-blue-300 hover:cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                    Create Project
+                        Create Project
                     </button>
+                    <p className="mt-10 text-center text-sm/6 text-gray-500">
+                        <a href="/admin" className="font-semibold text-blue-600 hover:text-blue-300">
+                            Back to Admin Dashboard
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
