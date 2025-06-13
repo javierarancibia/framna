@@ -5,6 +5,7 @@ import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type FormData = {
   username: string;
@@ -14,7 +15,6 @@ type FormData = {
 function LoginPage() {
     const { register, handleSubmit } = useForm<FormData>();
     const router = useRouter();
-    const [error, setError] = useState('');
 
     const onSubmit = async (data: FormData) => {
         const res = await signIn('credentials', {
@@ -26,7 +26,7 @@ function LoginPage() {
         if (res?.ok) {
             router.push('/admin');
             } else {
-            setError('Credenciales inválidas');
+            console.log('Invalid credentials');
         }
     };
 
@@ -87,9 +87,9 @@ function LoginPage() {
                         </button>
                     </div>
                     <p className="mt-10 text-center text-sm/6 text-gray-500">
-                        <a href="/" className="font-semibold text-purple-500 hover:text-purple-500">
+                        <Link href="/" className="font-semibold text-purple-500 hover:text-purple-500">
                             Home
-                        </a>
+                        </Link>
                     </p>
                 </form>
             </div>

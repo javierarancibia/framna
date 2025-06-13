@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
 import Features from "./Features";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -34,12 +35,12 @@ export default function Hero() {
                   alt="Hero Image"
                   className="rounded-full object-cover"
                 />
-                <a
+                <Link
                   href="/about"
                   className="rounded-2xl bg-transparent ring-1 ring-indigo-600 px-20 mt-7 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-purple-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
                 >
                   About Me
-                </a>
+                </Link>
               </div>
             </div>
           </div>
