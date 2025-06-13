@@ -38,7 +38,7 @@ export default function ProjectList({ projects, admin = false, }: { projects: Pr
     return (
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-8 pt-10 lg:max-w-none lg:grid-cols-3">
-                { items.map((project) => (
+                { [...items].reverse().map((project) => (
                     <div key={project.id} className="p-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
 
                         {project.image && (
