@@ -1,10 +1,12 @@
 import Hero from "@/components/Hero";
 import ProjectList from "@/components/ProjectList";
 
-export default async function AdminDashboard() {
+export const revalidate = 60; // Revalidate every 60 seconds
+
+export default async function HomePage() {
 
   const res = await fetch(process.env.NEXT_PUBLIC_MOCKAPI_URL!, {
-    cache: "no-store",
+    next: { revalidate: 60 }, // SSG + ISR
   });
 
   if (!res.ok) {

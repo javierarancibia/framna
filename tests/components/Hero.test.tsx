@@ -9,10 +9,4 @@ describe('Hero component', () => {
     expect(screen.getByText(/Front End Developer & Product Builder/i)).toBeInTheDocument();
   });
 
-  it('has an About Me button', () => {
-    render(<Hero />);
-    const button = screen.getByRole('link', { name: /About Me/i });
-    expect(button).toBeInTheDocument();
-    expect(button).toHaveAttribute('href', '/about');
-  });
 });

@@ -11,7 +11,7 @@ type FormData = {
 };
 
 export default function NewProjectPage() {
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit,  formState: { errors }, } = useForm<FormData>();
   const router = useRouter();
 
   // Funtion to handle form submission to create new project
@@ -52,6 +52,7 @@ export default function NewProjectPage() {
                                     className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
                                 />
                             </div>
+                            {errors.name && <span className="text-white">This field is required</span>}
                         </div>
                     </div>
 
@@ -65,7 +66,7 @@ export default function NewProjectPage() {
                         <div className="mt-2">
                             <div className="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
                                 <input
-                                    {  ...register("image", { required: true}) }
+                                    {  ...register("image") }
                                     type="text"
                                     placeholder="Image URL"
                                     className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
@@ -89,6 +90,7 @@ export default function NewProjectPage() {
                                 {  ...register("description", { required: true}) }
                             />
                         </div>
+                        {errors.name && <span className="text-white">This field is required</span>}
                     </div>
 
                     <button
