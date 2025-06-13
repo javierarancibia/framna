@@ -11,7 +11,7 @@ Built using the **App Router**, **Tailwind CSS**, and **TypeScript**, it demonst
 🚀 Deployment
 The app is already deployed on Vercel:
 
-[Go to app 🔗](https://framna-mc8094win-javierarancibias-projects.vercel.app)
+[Go to app 🔗](https://framna.vercel.app/)
 
 ## 🔧 Tech Stack
 
