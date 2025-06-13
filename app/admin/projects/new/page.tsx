@@ -19,7 +19,7 @@ export default function NewProjectPage() {
     try {
       const url = process.env.NEXT_PUBLIC_MOCKAPI_URL;
       if (!url) {
-        console.error("Falta NEXT_PUBLIC_MOCKAPI_URL");
+        console.error("Missing NEXT_PUBLIC_MOCKAPI_URL env variable");
         return;
       }
       await axios.post(url, data);

@@ -1,14 +1,14 @@
 import React from "react";
 
 const navigation = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },
   { name: "About Me", href: "/about" },
   { name: "Admin", href: "/admin" },
 ];
 
 const Navbar = () => {
   return (
-    <header className="flex justify-center bg-gradient-to-r from-slate-900 to-slate-700">
+    <header className="flex justify-center">
         <nav
             aria-label="Global"
             className="flex items-center justify-between p-6 lg:px-8"

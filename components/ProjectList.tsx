@@ -39,22 +39,22 @@ export default function ProjectList({ projects, admin = false, }: { projects: Pr
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-8 border-t border-gray-200 pt-10 lg:max-w-none lg:grid-cols-3">
                 { items.map((project) => (
-                    <div key={project.id} className="rounded border p-4 shadow-sm">
-                        <h2 className="text-xl font-semibold">{project.name}</h2>
-                        <p className="mt-1 text-sm text-gray-600">{project.description}</p>
+                    <div key={project.id} className="p-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
 
                         {project.image && (
-                        <div className="relative mt-3 aspect-[4/3] w-full overflow-hidden rounded">
-                            <Image
-                                src={isValidImageUrl(project.image)}
-                                alt={project.name}
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
+                            <div className="relative mt-3 aspect-[4/3] w-full overflow-hidden rounded">
+                                <Image
+                                    src={isValidImageUrl(project.image)}
+                                    alt={project.name}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         )}
+                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-5">{project.name}</h5>
+                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{project.description}</p>
 
-                        {admin && (
+                        {   admin && (
                             <button
                                 onClick={() => handleDelete(project.id)}
                                 className="mt-4 rounded-md bg-red-500 px-10 py-1 text-white text-sm hover:bg-red-700 hover:cursor-pointer transition-colors duration-200"

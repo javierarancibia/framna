@@ -15,7 +15,7 @@ export default async function AdminDashboard() {
   const projects = await res.json();
 
   return (
-    <main className="bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r">
+    <main>
       <Hero />
       <ProjectList projects={projects} admin={false} />
     </main>
