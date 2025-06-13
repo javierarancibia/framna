@@ -12,10 +12,10 @@ export default function About() {
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                 <div className="lg:pr-4">
                     <div className="lg:max-w-lg">
-                    <p className="text-base/7 font-semibold text-indigo-600">
+                    <p className="text-base/7 font-semibold text-purple-600">
                         About Me
                     </p>
-                    <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-indigo-700 sm:text-5xl">
+                    <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-purple-700 sm:text-5xl">
                         Developer with an eye for design and a builder’s mindset
                     </h1>
                     <p className="mt-6 text-xl/8 text-gray-400">
@@ -56,7 +56,7 @@ export default function About() {
                     <ul role="list" className="mt-8 space-y-8 text-white">
                         <li className="flex gap-x-3">
                         <span>
-                            <strong className="font-semibold text-indigo-600">
+                            <strong className="font-semibold text-purple-600">
                             Front-End Development.
                             </strong>{" "}
                             I craft responsive, fast-loading, maintainable interfaces
@@ -65,7 +65,7 @@ export default function About() {
                         </li>
                         <li className="flex gap-x-3">
                         <span>
-                            <strong className="font-semibold text-indigo-600">
+                            <strong className="font-semibold text-purple-600">
                             Fullstack Experience.
                             </strong>{" "}
                             From API integration to authentication and content
@@ -75,7 +75,7 @@ export default function About() {
                         </li>
                         <li className="flex gap-x-3">
                         <span>
-                            <strong className="font-semibold text-indigo-600">
+                            <strong className="font-semibold text-purple-600">
                             Independent Projects.
                             </strong>{" "}
                             I’ve launched digital products, tools and ecommerce stores —
@@ -90,7 +90,7 @@ export default function About() {
                         I collaborate remotely and build with a global mindset.
                     </p>
 
-                    <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-600">
+                    <h2 className="mt-16 text-2xl font-bold tracking-tight text-purple-600">
                         Let’s work together
                     </h2>
                     <p className="mt-6">

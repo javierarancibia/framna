@@ -10,7 +10,7 @@ export default function Hero() {
                 <div className="container mx-auto px-6 flex relative py-5">
                     <div className="flex flex-col relative z-20">
                         <div className="hidden sm:mb-8 sm:flex">
-                            <div className="relative rounded-full px-5 py-1 text-sm text-white ring-1 ring-stone-400 hover:ring-gray-900/20 text-base font-bold whitespace-nowrap text-transparent bg-clip-text ">
+                            <div className="relative rounded-full px-5 py-1 text-xs text-white ring-1 ring-purple-400 text-base font-light whitespace-nowrap text-transparent bg-slate-700 ">
                                 Front End Developer
                             </div>
                         </div>
@@ -32,7 +32,7 @@ export default function Hero() {
                                 />
                                 <a
                                     href="/about"
-                                    className="rounded-2xl bg-transparent ring-1 ring-indigo-600 px-20 mt-5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    className="rounded-2xl bg-transparent ring-1 ring-indigo-600 px-20 mt-5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-purple-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
                                 >
                                     About Me
                                 </a>
