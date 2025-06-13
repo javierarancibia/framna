@@ -38,32 +38,30 @@ Built using the **App Router**, **Tailwind CSS**, and **TypeScript**, it demonst
 
 ---
 
-## 📂 Project Structure
-``
-app/
-├── page.tsx # Home (SSG)
-├── about/ # About me page
-├── admin/ # Admin layout
-├── login/ # Auth login page
-└── projects/new/ # Create new project
-components/
-├── Hero.tsx
-├── ProjectList.tsx
-└── Navbar.tsx
-lib/
-└── utils.ts # Helper: validate image URLs
-tests/
-├── setupTests.ts # Jest config
-└── *.test.tsx # Component tests
-``
-
----
-
 ## 🛠️ Getting Started
 
-### 1. Clone the repo
+### 1. Clone the repo nad install dependencies 
 
 ```bash
 git clone https://github.com/your-username/portfolio-challenge.git
 cd portfolio-challenge
+npm install
 
+### 2. Add Environment Variables 
+
+```bash
+ADMIN_USER=xxxx
+ADMIN_PASS=xxxx
+NEXTAUTH_SECRET=your_secret_key
+NEXT_PUBLIC_MOCKAPI_URL=mockapi_url
+
+
+### 3. Run locally 
+
+```bash
+npm run dev
+
+### 4. Run tests 
+
+```bash
+npm run test
