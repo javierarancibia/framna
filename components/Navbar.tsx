@@ -24,9 +24,9 @@ const Navbar = () => {
             <div className="hidden lg:flex lg:gap-x-12">
                 { navigation.map((item) => (
                     <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-sm/6 font-semibold text-white"
+                        key={item.name}
+                        href={item.href}
+                        className="text-sm/6 font-semibold text-white hover:text-indigo-500 transition-colors duration-200"
                     >
                     {item.name}
                     </a>

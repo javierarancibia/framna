@@ -20,7 +20,7 @@ export default function Hero() {
                             </h1>
                             <h2 className="text-base font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 sm:text-6xl font-semibold">Front End Developer & Product Builder</h2>
                             <p className="mt-8 text-2xl font-normal text-pretty text-slate-400">
-                                I build fast, responsive, and maintainable web apps using React, Tailwind CSS and Modern Tools. I turn ideas into clean, functional interfaces.
+                                I build fast, responsive, and maintainable web apps using ReactJS, Tailwind CSS and Modern Tools. I turn ideas into clean, functional interfaces.
                             </p>
                             <div className="mt-10 flex items-start justify-start gap-x-6">
                                 <Image
@@ -32,7 +32,7 @@ export default function Hero() {
                                 />
                                 <a
                                     href="/about"
-                                    className="rounded-2xl bg-transparent ring-1 ring-white px-15 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    className="rounded-2xl bg-transparent ring-1 ring-indigo-600 px-20 mt-5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
                                     About Me
                                 </a>
