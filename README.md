@@ -39,7 +39,7 @@ Built using the **App Router**, **Tailwind CSS**, and **TypeScript**, it demonst
 ---
 
 ## 📂 Project Structure
-
+``
 app/
 ├── page.tsx # Home (SSG)
 ├── about/ # About me page
@@ -55,4 +55,4 @@ lib/
 tests/
 ├── setupTests.ts # Jest config
 └── *.test.tsx # Component tests
-
+``
