@@ -6,6 +6,8 @@ Built using the **App Router**, **Tailwind CSS**, and **TypeScript**, it demonst
 
 ---
 
+![Alt text](public/hero.png)
+
 🚀 Deployment
 The app is already deployed on Vercel:
 
