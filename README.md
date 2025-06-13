@@ -56,3 +56,14 @@ tests/
 ├── setupTests.ts # Jest config
 └── *.test.tsx # Component tests
 ``
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/portfolio-challenge.git
+cd portfolio-challenge
+
