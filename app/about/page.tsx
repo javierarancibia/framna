@@ -87,14 +87,14 @@ export default function About() {
                     <p className="mt-8">
                         Whether working in a team or solo, I care about clean code,
                         great UX, and shipping fast. Currently based in the Netherlands,
-                        I collaborate remotely and build with a global mindset.
+                        I collaborate and build with a global mindset.
                     </p>
 
                     <h2 className="mt-16 text-2xl font-bold tracking-tight text-purple-600">
                         Let’s work together
                     </h2>
                     <p className="mt-6">
-                        I’m open to remote roles or freelance projects where I can bring
+                        I’m open to be part of projects where I can bring
                         value through design-focused front-end development and solid
                         product thinking.
                     </p>
