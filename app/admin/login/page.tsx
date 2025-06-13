@@ -40,7 +40,7 @@ function LoginPage() {
                     src="/hero.png"
                     className="rounded-full object-cover mx-auto"
                 />
-                <h2 className="text-base font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-500 to-pink-500 sm:text-2xl font-semibold py-3 text-center">
+                <h2 className="text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 sm:text-4xl font-semibold py-2 text-center">
                     Admin Login
                 </h2>
             </div>

@@ -28,8 +28,8 @@ export default function Hero() {
               </div>
             </div>
             <div className="text-start">
-              <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-6xl">
-                I'm Javier Arancibia
+              <h1 className="text-xl tracking-tight text-balance text-white sm:text-5xl">
+                I am Javier Arancibia
               </h1>
               <h2 className="text-base font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 sm:text-6xl font-semibold py-2">
                 Front End Developer & Product Builder

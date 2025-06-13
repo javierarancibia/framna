@@ -15,7 +15,7 @@ export default function About() {
                     <p className="text-base/7 font-semibold text-purple-600">
                         About Me
                     </p>
-                    <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-purple-700 sm:text-5xl">
+                    <h1 className="text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 sm:text-4xl font-semibold py-2">
                         Developer with an eye for design and a builder’s mindset
                     </h1>
                     <p className="mt-6 text-xl/8 text-gray-400">
