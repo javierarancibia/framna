@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
-import Features from "./Features";
+import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -16,8 +17,8 @@ export default function Hero() {
               </div>
             </div>
             <div className="text-start">
-              <h1 className="text-xl tracking-tight text-balance text-white sm:text-5xl tracking-tighter">
-                I am Javier Arancibia
+              <h1 className="text-xl tracking-tight text-balance text-white sm:text-4xl tracking-tighter">
+                I am <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Javier Arancibia</span>
               </h1>
               <h2 className="text-base font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 sm:text-6xl font-semibold py-2 tracking-tighter">
                 Front End Developer & Product Builder
@@ -40,6 +41,23 @@ export default function Hero() {
                   className="rounded-2xl bg-transparent ring-1 ring-indigo-600 px-20 mt-7 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-purple-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
                 >
                   About Me
+                </Link>
+              </div>
+              {/* Social Links */}
+              <div className="mt-10 flex items-center justify-start gap-x-6">
+                <Link
+                    href="https://github.com/javierarancibia"
+                    target="_blank"
+                    className="text-indigo-600 hover:text-gray-200 transition-colors duration-200 text-2xl"
+                >
+                  <FaGithub />
+                </Link>
+                <Link
+                    href="https://www.linkedin.com/in/javier-arancibia/"
+                    target="_blank"
+                    className="text-indigo-600 hover:text-gray-200 transition-colors duration-200 text-2xl"
+                >
+                  <FaLinkedin />
                 </Link>
               </div>
             </div>
