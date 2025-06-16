@@ -8,6 +8,7 @@ type FormData = {
   name: string;
   description: string;
   image?: string;
+  skills?: string[];
 };
 
 export default function NewProjectPage() {
@@ -23,7 +24,7 @@ export default function NewProjectPage() {
         return;
       }
       await axios.post(url, data);
-      router.push("/admin");
+        router.push("/admin");
     } catch (error) {
       console.error("Error creating the project:", error);
     }
