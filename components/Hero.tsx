@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="container mx-auto px-6 flex relative py-5">
           <div className="flex flex-col relative z-20">
             <div className="hidden sm:mb-8 sm:flex">
-              <div className="relative rounded-full px-5 py-1 text-xs text-white ring-1 ring-purple-400 text-base font-light whitespace-nowrap text-transparent bg-slate-700 ">
+              <div className="relative rounded-full px-5 py-1 text-xs ring-1 ring-purple-400 text-purple-400 bg-indigo-950 ">
                 Front End Developer
               </div>
             </div>

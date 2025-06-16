@@ -49,7 +49,7 @@ export default function About() {
                             skills.map((skill) => (
                                 <p
                                     key={skill.name}
-                                    className={`rounded-xl my-3 text-sm px-8 py-1 mr-2 text-purple-600 bg-indigo-950`}
+                                    className={`rounded-xl my-3 text-sm px-8 py-1 mr-2 text-purple-400 bg-indigo-950 `}
                                 >
                                     {skill.name}
                                 </p>
