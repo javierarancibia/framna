@@ -16,10 +16,10 @@ export default function Hero() {
               </div>
             </div>
             <div className="text-start">
-              <h1 className="text-xl tracking-tight text-balance text-white sm:text-5xl">
+              <h1 className="text-xl tracking-tight text-balance text-white sm:text-5xl tracking-tighter">
                 I am Javier Arancibia
               </h1>
-              <h2 className="text-base font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 sm:text-6xl font-semibold py-2">
+              <h2 className="text-base font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 sm:text-6xl font-semibold py-2 tracking-tighter">
                 Front End Developer & Product Builder
               </h2>
               <p className="mt-8 text-2xl font-normal text-pretty text-slate-400">

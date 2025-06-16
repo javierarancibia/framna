@@ -2,6 +2,15 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
 
+const skills = [
+    { name: "ReactJS", color: "bg-indigo-950", textColor: "text-purple-600" },
+    { name: "Node.js", color: "bg-green-950", textColor: "text-green-600" },
+    { name: "Tailwind CSS", color: "bg-blue-950", textColor: "text-blue-600" },
+    { name: "TypeScript", color: "bg-yellow-950", textColor: "text-yellow-600" },
+    { name: "Next.js", color: "bg-gray-950", textColor: "text-gray-600" },
+    { name: "GraphQL", color: "bg-purple-950", textColor: "text-purple-600" },];
+
+
 export default function About() {
   return (
     <>
@@ -28,13 +37,25 @@ export default function About() {
 
                 {/* Image */}
                 <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                <Image
-                    alt="Portfolio 3D Report"
-                    width={400}
-                    height={400}
-                    src="/hero.png"
-                    className="rounded-full object-cover"
-                />
+                    <Image
+                        alt="Portfolio 3D Report"
+                        width={400}
+                        height={400}
+                        src="/hero.png"
+                        className="rounded-full object-cover"
+                    />
+                    <div className="flex flex-wrap mt-5 justify-start items-center space-x-2 md:px-10">
+                        {   /* Skills badges */
+                            skills.map((skill) => (
+                                <p
+                                    key={skill.name}
+                                    className={`rounded-xl my-3 text-sm px-8 py-1 mr-2 text-purple-600 bg-indigo-950`}
+                                >
+                                    {skill.name}
+                                </p>
+                            ))
+                        }
+                    </div>
                 </div>
 
                 {/* Details and experience */}
@@ -56,14 +77,32 @@ export default function About() {
                             <h5 className="text-white text-5xl mt-10">Work Experience</h5>
                             <ul role="list" className="mt-8 space-y-8 text-white">
                                 <li className="flex gap-x-3">
-                                <span>
-                                    <strong className="font-semibold text-purple-600">
-                                    Front-End Development.
-                                    </strong>{" "}
-                                    I craft responsive, fast-loading, maintainable interfaces
-                                    using React, Next.js and Tailwind.
-                                </span>
+                                    <span>
+                                        <strong className="font-semibold text-purple-600">
+                                        HODL Funds, Rotterdam, NL
+                                        </strong>{" "}
+                                        <p className="text-gray-400">
+                                            Front End Developer, May 2022 - May 2025
+                                        </p>
+                                    </span>
                                 </li>
+                                <div>
+                                    <ul className="list-disc pl-5 text-gray-300 space-y-2 text-base leading-relaxed">
+                                        <li>
+                                            Built a <strong>Crypto Trading SPA</strong> with React.js and TypeScript, optimized for desktop and mobile asset management.
+                                        </li>
+                                        <li>
+                                            Developed an interactive <strong>Financial Benchmarking Tool</strong> using charting libraries to support strategic trading decisions.
+                                        </li>
+                                        <li>
+                                            Delivered a <strong>Full Stack Email Signature Manager</strong> with React, Express, and Gmail API, used by 50+ employees.
+                                        </li>
+                                        <li>
+                                            Created a <strong>Marketing Analytics Dashboard</strong> using Node.js, Redis, and HubSpot API to track daily KPIs.
+                                        </li>
+                                    </ul>
+                                </div>
+
                                 <li className="flex gap-x-3">
                                 <span>
                                     <strong className="font-semibold text-purple-600">
